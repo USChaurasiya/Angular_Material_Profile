@@ -1,0 +1,69 @@
+<script type="text/ng-template" id="dialogContent">
+   <md-dialog aria-label="Full Screen Dialog Test" class="fullscreen-dialog" style="width:60%;height:auto;">
+    <md-toolbar style="border-bottom:1px solid">
+       <div class="md-toolbar-tools toolbar">
+         <md-button ng-click="closeDialog()" class="md-icon-button">
+         <i class="material-icons" >clear</i>
+         </md-button>
+         <h2 flex="flex">UUUUU</h2>
+       </div>
+
+     </md-toolbar>
+      <md-dialog-content>
+
+<md-card>
+   <!-- <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">BANK INFORMATION</span>
+        </md-card-title-text>
+     </md-card-title> -->
+       <md-card-content>
+  <form name="userForm" novalidate>
+         <div layout="column">
+           <md-input-container>
+              <label>PAN Number</label>
+              <input ng-model="bankData.panNumber" name="panNo" class="form-control textbox" ng-pattern="/[A-Za-z]{5}\d{4}[A-Za-z]{1}/" autocomplete="off">
+              <p ng-show="bankForm.panNo.$error.pattern" style="color:red;">Invalid PAN no</p>
+            </md-input-container>
+            <md-input-container>
+              <label>Account Number</label>
+              <input ng-model="bankData.accountNumber" name="accountNo" class="form-control textbox" ng-pattern="/^[0-9]\d*$/" autocomplete="off">
+              <p ng-show="bankForm.accountNo.$error.pattern" style="color:red;">Invalid Account number</p>
+            </md-input-container>
+            <md-input-container>
+              <label>IFSC Code</label>
+              <input ng-model="bankData.ifscCode" class="form-control textbox" autocomplete="off">
+            </md-input-container>
+            <md-input-container>
+              <label>Bank Name</label>
+              <input ng-model="bankData.bankName" class="form-control textbox">
+            </md-input-container>
+             <md-input-container>
+              <label>Bank Verified</label>
+              <input type="radio" id="1" ng-model="bankData.bankVerified" value="true" /> &#160;&#160;<span>Yes</span>
+
+            </md-input-container>
+            <md-input-container>
+              <label>Pay Stipend</label>
+              <input type="radio" id="1" ng-model="bankData.payStipend" value="true" /> &#160;&#160;<span>Yes</span>
+
+            </md-input-container>
+            <md-input-container>
+              <label>Amount</label>
+
+              <input ng-model="bankData.ammount" class="form-control textbox">
+            </md-input-container>
+              <label>Reason</label>
+
+               <textarea ng-model="bankData.reason" rows="5" md-select-on-focus></textarea>
+            </md-input-container>
+         </div>
+             </form>
+                  <md-card-content>
+                     <md-card-actions layout="row" layout-align="end center">
+              <md-button ng-click="submitForm()" class="md-raised md-primary">Submit</md-button>
+      </md-card-actions>
+</md-card>
+      </md-dialog-content>
+    </md-dialog>
+  </script>

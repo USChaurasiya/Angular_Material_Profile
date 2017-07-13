@@ -1,0 +1,477 @@
+<md-toolbar class="md-hue-2" style="    background-color: rgb(80, 81, 88);" >
+      <div class="md-toolbar-tools">
+        <h2 flex md-truncate>Fundoo HR Employee Profile</h2>
+      </div>
+</md-toolbar>
+<div layout="row">
+<div flex="15">
+  <md-toolbar scroll flex="15" class="example-card card-3" style=" height:400px;text-align:center">
+    <center>
+    <img md-card-image src="css/images/uma1.jpg"class="profile-img">
+  </center>
+    <h3><font color="darkred" >Uma Shankar Jaiswal</font></h3>
+    <md-divider></md-divider>
+    <div>
+      <span style="float:left">
+        <i class="material-icons">email</i>
+      </span>
+      <span style="float:right">
+        <i class="material-icons">local_phone</i>
+      </span>
+    </div>
+
+    <!-- <div>
+      <span>
+        +91-9166250113
+      </span>
+    </div> -->
+  <md-divider ></md-divider>
+  </md-toolbar>
+</div>
+
+   <div flex="70">
+
+  <md-card  layout="row" class="example-card card-3">
+    <md-card-content class="card-content" flex="25" style="font-weight:bold">
+      <div>Name:</div>
+      <div >Employee ID:</div>
+      <div>Status:</div>
+      <div>Program Assign:</div>
+      <div>Company Start Date:</div>
+    </md-card-content>
+    <md-card-content class="card-content" flex="25">
+      <div>Uma Shankar</div>
+      <div>	T0101201723</diV>
+      <div>PROBATION</div>
+      <div>BRIDGELABZ</div>
+      <div>-</div>
+    </md-card-content>
+    <md-card-content class="card-content" flex="25" style="font-weight:bold">
+      <div>Start Date:</div>
+      <div>Tech Stack:</div>
+      <div>Company Assign:</div>
+      <div>Company End Date:</div>
+      <div>Leaves Taken:</div>
+
+    </md-card-content>
+    <md-card-content class="card-content" flex="25">
+      <div>2016/01/16</div>
+      <div>JAVA</diV>
+      <div>BridgeLabz</div>
+      <div>-</div>
+      <div>-</div>
+    </md-card-content>
+  </md-card>
+
+  <md-card  layout="row" class="example-card card-3" style="text-align:center">
+      <md-card-content class="card-content"  flex="30" style="border-right: 1px solid rgb(230, 230, 227);">
+        <span class="span-style">5</span>
+        <span class="summry-style">Leave Taken </span>
+      </md-card-content>
+      <md-card-content class="card-content"  flex="30" style="border-right: 1px solid rgb(230, 230, 227);">
+        <span class="span-style">21</span>
+          <span class="summry-style">Total Attendence</span>
+
+      </md-card-content>
+      <md-card-content class="card-content"  flex="40" style="border-right: 1px solid rgb(230, 230, 227);">
+        <span class="span-style">0</span>
+        <span class="summry-style">Month Attendence</span>
+      </md-card-content>
+  </md-card>
+
+
+  <md-card class="cont example-card card-3"  layout="column"  ng-class="{academicShow : academicShow}">
+    <md-card-content class="card-content-heading head-style" >
+      <font color="darkcyan"> Academic Details </font>
+      <i class="material-icons editIcon" style="float:right" ng-click="showDialog($event)">mode_edit</i>
+    </md-card-content>
+      <md-card-content layout="row">
+        <md-card-content class="card-content"flex="25"style="font-weight:bold">
+          <div>Diploma:</div>
+          <div >Degree:</div>
+          <div>Qualification:</div>
+          <div>Discipline:</div>
+          <div>University	:</div>
+          <div>Year Of Passing</div>
+          <div>Agreegate Percentage:</div>
+          <div>Start Date:</div>
+          <div>End Date:</div>
+        </md-card-content>
+        <md-card-content class="card-content"  flex="25" >
+          <div>NO</div>
+          <div>YES</diV>
+          <div>B.Tech</div>
+          <div>ECE</div>
+          <div>RTU,Kota</div>
+          <div>2015</div>
+          <div>74.9%</div>
+          <div>1970-01-01T00:00:00.000Z</div>
+          <div>1970-01-01T00:00:00.000Z</div>
+        </md-card-content>
+        <md-card-content class="card-content"flex="25" style="font-weight:bold">
+          <div>Institute:</div>
+          <div>Duration:</div>
+          <div>Training In:</div>
+          <div>Location:</div>
+          <div>Comment:</div>
+        </md-card-content>
+        <md-card-content class="card-content"flex="25" >
+          <div>J-SPIDER,Bangalore</div>
+          <div>6</diV>
+          <div>JAVA,J2EE,FRAMEWORK</div>
+          <div>Old Airport Road</div>
+          <div>-</div>
+        </md-card-content>
+      </md-card-content>
+      <footer>
+            <div layout="row" layout-align="center center" >
+              <div ng-click="academicShow = true" ng-show="academicShow != true">
+                <span style="line-height:1.5">View more</span>
+                <span><i class="material-icons"style="float:right">keyboard_arrow_down</i></span>
+              </div>
+              <div ng-click="academicShow = false" ng-show="academicShow == true">
+                <span style="line-height:1.5">Show less</span>
+                <span><i class="material-icons"style="float:right">keyboard_arrow_up</i></span>
+              </div>
+
+            </div>
+        </footer>
+  </md-card>
+
+  <md-card class="cont example-card card-3"  layout="column"  ng-class="{personalShow : personalShow}">
+    <md-card-content class="card-content-heading head-style">
+      <font color="darkcyan"; font-weight:"bold"> Personal Details</font>
+      <i class="material-icons editIcon" style="float:right" ng-click="showDialog($event)">mode_edit</i>
+    </md-card-content>
+    <md-card-content layout="row">
+      <md-card-content class="card-content" flex="25" style="font-weight:bold">
+        <div>
+          <span>Date Of Birth:</span>
+        </div>
+        <div >Address:</div>
+        <div>Permanent Address</div>
+      </md-card-content>
+      <md-card-content class="card-content"  flex="25">
+          <div>1993/07/05</div>
+          <div>Vashi Navi Mumbai</diV>
+          <div>Lalita Park ,Laxmi Nagar New Delhi </div>
+      </md-card-content>
+      <md-card-content class="card-content"  flex="25"style="font-weight:bold">
+        <div>Name:</div>
+        <div>Relation:</div>
+        <div>Contact:</div>
+        <div>Occupation:</div>
+        <div>Annual Salary:</div>
+      </md-card-content>
+      <md-card-content class="card-content" layout="column" flex="25">
+        <div>Mr...........</div>
+        <div>Father</diV>
+        <div>+91-900XXXXXXX</div>
+        <div>Govt.</div>
+        <div>5-10lac</div>
+      </md-card-content>
+    </md-card-content>
+    <footer>
+          <div layout="row" layout-align="center center" >
+            <div ng-click="personalShow = true" ng-show="personalShow != true">
+              <span style="line-height:1.5">View more</span>
+              <span><i class="material-icons"style="float:right">keyboard_arrow_down</i></span>
+            </div>
+            <div ng-click="personalShow = false" ng-show="personalShow == true">
+              <span style="line-height:1.5">Show less</span>
+              <span><i class="material-icons"style="float:right">keyboard_arrow_up</i></span>
+            </div>
+
+          </div>
+      </footer>
+  </md-card>
+
+  <md-card class="cont example-card card-3"  layout="column"  ng-class="{hrShow : hrShow}">
+    <md-card-content class="card-content-heading head-style">
+      <font color="darkcyan"; font-weight:"bold">HR Data</font>
+      <i class="material-icons editIcon" style="float:right" ng-click="showDialog($event)">mode_edit</i>
+    </md-card-content>
+    <md-card-content layout="row">
+      <md-card-content class="card-content" flex="30" style="font-weight:bold">
+        <div >
+          <span><b>Coding Test At</b></span>
+          <span>{{hrData.codingTestAt || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Coding Test City</b></span>
+          <span>{{hrData.codingTestCity || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Employee Stipend</b></span>
+          <span>{{hrData.employeeStipend || ':' }}</span>
+          <span ng-show="showText">
+            <select id="City" class="form-control selectTextbox" ng-model="hrData.employeeStipend">
+                              <option value="0">Rs 0</option>
+                              <option value="5000">Rs 5000</option>
+                              <option value="10000">Rs 10000</option>
+            </select>
+          </span>
+        </div>
+        <div>
+          <span><b>Estimated Date</b></span>
+          <span>{{hrData.estimatedDate || ':' }}</span>
+          <span ng-show="showText">
+            <input ui-date="dateOptions" ng-model="hrData.estimatedDate" class="form-control textbox" placeholder="yyyy/mm/dd">
+          </span>
+        </div>
+
+        <div>
+          <span><b>Contract Booking Fee</b></span>
+          <span>{{hrData.contractBookingFee || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Contract City	</b></span>
+          <span>{{hrData.contractCity || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Contract Monthly Fee</b>	</span>
+          <span>{{hrData.contractMonthlyFee || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Contract Status</b></span>
+          <span>{{hrData.contractStatus || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Contract Transfer Fee</b></span>
+          <span>{{hrData.contractTransferFee || ':' }}</span>
+        </div>
+
+        <div>
+          <span><b>Current Contract Assignment</b></span>
+          <span>{{hrData.currentContractAssignment || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Current Program Assignment	</b></span>
+          <span>{{hrData.currentProgramAssignment || ':' }}</span>
+        </div>
+      </md-card-content>
+      <md-card-content class="card-content"  flex="20">
+          <div>-</div>
+          <div>-</diV>
+          <div>-</div>
+          <div>-</div>
+          <div>-</diV>
+          <div>-</div>
+          <div>-</div>
+          <div>-</diV>
+          <div>-</div>
+          <div>-</div>
+          <div>-</diV>
+      </md-card-content>
+      <md-card-content class="card-content"  flex="30"style="font-weight:bold">
+        <div>
+          <span><b>Fellowship Tech Assignment</b></span>
+          <span>{{hrData.fellowshipTechAssignment || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Hiring City</b></span>
+          <span>{{hrData.hiringCity || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Planned Start Date</b></span>
+          <span>{{hrData.plannedStartDate || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Planned End Date</b></span>
+          <span>{{hrData.plannedEndDate || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Program Current Status</b></span>
+          <span>{{hrData.programCurrentStatus || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Program Lag</b></span>
+          <span>{{hrData.programLag || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Company End Date</b></span>
+          <span>{{hrData.companyStartDate || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Company End Date</b></span>
+          <span>{{hrData.companyEndDate || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Transfer Date	</b></span>
+          <span>{{hrData.transferDate || ':' }}</span>
+        </div>
+        <div>
+          <span><b>Referred By</b></span>
+          <span>{{hrData.referredBy || ':' }}</span>
+        </div>
+      </md-card-content>
+      <md-card-content class="card-content" layout="column" flex="20">
+        <div>-</div>
+        <div>-</diV>
+        <div>-</div>
+        <div>-</div>
+        <div>-</diV>
+        <div>-</div>
+        <div>-</div>
+        <div>-</diV>
+        <div>-</div>
+        <div>-</div>
+      </md-card-content>
+    </md-card-content>
+    <footer>
+          <div layout="row" layout-align="center center" >
+            <div ng-click="hrShow = true" ng-show="hrShow != true">
+              <span style="line-height:1.5">View more</span>
+              <span><i class="material-icons"style="float:right">keyboard_arrow_down</i></span>
+            </div>
+            <div ng-click="hrShow = false" ng-show="hrShow == true">
+              <span style="line-height:1.5">Show less</span>
+              <span><i class="material-icons"style="float:right">keyboard_arrow_up</i></span>
+            </div>
+
+          </div>
+      </footer>
+  </md-card>
+
+  <md-card class="cont example-card card-3"  layout="column"  ng-class="{show : show}">
+      <md-card-content class="card-content-heading head-style">
+        <div layout="colum" ><font color="darkcyan">Bank Info</font>
+          <i class="material-icons editIcon" ng-click="showDialog($event)">mode_edit</i>
+        </div>
+      </md-card-content>
+      <md-card-content class="card-content" layout="row">
+        <md-card-content class="card-content"  flex="20">
+        <div><b>PAN No</b></div>
+        <div><b>Bank Account No</b></div>
+        <div><b>IFSC Code</b></div>
+        <div><b>Bank Name</b></div>
+      </md-card-content>
+      <md-card-content flex="30">
+        <div>CAEPP0618K</div>
+        <div>4971000100009317</div>
+        <div>PUNB0497100</div>
+        <div>PUNJAB NATIONAL BANK</div>
+      </md-card-content>
+      <md-card-content class="card-content" flex="30">
+        <div><b>Bank Verified</b></div>
+        <div><b>Pay Stipend</b></div>
+        <div><b>Amount</b></div>
+        <div><b>Reason</b></div>
+      </md-card-content>
+     <md-card-content flex="20">
+       <div>Yes</div>
+       <div>Yes</div>
+       <div>-</div>
+       <div>-</div>
+     </md-card-content>
+   </md-card-content>
+    <footer>
+          <div layout="row" layout-align="center center" >
+            <div ng-click="show = true" ng-show="show != true">
+              <span style="line-height:1.5">View more</span>
+              <span><i class="material-icons"style="float:right">keyboard_arrow_down</i></span>
+            </div>
+            <div ng-click="show = false" ng-show="show == true">
+              <span  style="line-height:1.5">Show less</span>
+              <span><i class="material-icons"style="float:right">keyboard_arrow_up</i></span>
+            </div>
+
+          </div>
+      </footer>
+  </md-card>
+
+  <!-- <md-card class="example-card card-3">
+    <md-card-content>
+      <h4>Tracking</h4>
+    </md-card-content>
+    <md-card-content>
+      <h3></h3>
+    </md-card-content>
+  </md-card> -->
+
+</div>
+
+<div flex="15">
+  <md-toolbar scroll flex="15" class="example-card card-3" style=" height:400px;text-align:center">
+    <div layout="column" style="text-align:center;">
+        <md-card-content class="card-content"  flex="30" style="border-right: 1px solid rgb(230, 230, 227);">
+          <span class="span-style">5</span>
+          <span class="">Leave Taken </span>
+        </md-card-content>
+        <md-divider></md-divider>
+        <md-card-content class="card-content"  flex="30" style="border-right: 1px solid rgb(230, 230, 227);">
+          <span class="span-style">21</span>
+            <span class="">Total Attendence</span>
+        </md-card-content>
+        <md-divider></md-divider>
+        <md-card-content class="card-content"  flex="40" style="border-right: 1px solid rgb(230, 230, 227);">
+          <span class="span-style">0</span>
+          <span class="">Month Attendence</span>
+        </md-card-content>
+        <md-divider></md-divider>
+    </div>
+  </md-toolbar>
+</div>
+
+<script type="text/ng-template" id="dialogContent">
+   <md-dialog aria-label="Full Screen Dialog Test" class="fullscreen-dialog" style="width:60%;height:auto;">
+    <md-toolbar style="border-bottom:1px solid">
+       <div class="md-toolbar-tools toolbar">
+         <md-button ng-click="closeDialog()" class="md-icon-button">
+           <i class="material-icons" >clear</i>
+         </md-button>
+         <h2 flex="flex">Edit Bank Information</h2>
+       </div>
+    </md-toolbar>
+  <md-dialog-content>
+    <md-card>
+      <md-card-content>
+        <form name="userForm" novalidate>
+          <div layout="column">
+            <md-input-container>
+              <label>PAN Number</label>
+              <input ng-model="bankData.panNumber" name="panNo" class="form-control textbox" ng-pattern="/[A-Za-z]{5}\d{4}[A-Za-z]{1}/" autocomplete="off">
+              <p ng-show="bankForm.panNo.$error.pattern" style="color:red;">Invalid PAN no</p>
+            </md-input-container>
+            <md-input-container>
+              <label>Account Number</label>
+              <input ng-model="bankData.accountNumber" name="accountNo" class="form-control textbox" ng-pattern="/^[0-9]\d*$/" autocomplete="off">
+              <p ng-show="bankForm.accountNo.$error.pattern" style="color:red;">Invalid Account number</p>
+            </md-input-container>
+            <md-input-container>
+              <label>IFSC Code</label>
+              <input ng-model="bankData.ifscCode" class="form-control textbox" autocomplete="off">
+            </md-input-container>
+            <md-input-container>
+              <label>Bank Name</label>
+              <input ng-model="bankData.bankName" class="form-control textbox">
+            </md-input-container>
+             <md-input-container>
+              <label>Bank Verified</label>
+              <input type="radio" id="1" ng-model="bankData.bankVerified" value="true" /> &#160;&#160;<span>Yes</span>
+
+            </md-input-container>
+            <md-input-container>
+              <label>Pay Stipend</label>
+              <input type="radio" id="1" ng-model="bankData.payStipend" value="true" /> &#160;&#160;<span>Yes</span>
+
+            </md-input-container>
+            <md-input-container>
+              <label>Amount</label>
+
+              <input ng-model="bankData.ammount" class="form-control textbox">
+            </md-input-container>
+              <label>Reason</label>
+
+               <textarea ng-model="bankData.reason" rows="5" md-select-on-focus></textarea>
+            </md-input-container>
+          </div>
+        </form>
+            <md-card-content>
+              <md-card-actions layout="row" layout-align="end center">
+            <md-button ng-click="submitForm()" class="md-raised md-primary">Submit</md-button>
+      </md-card-actions>
+    </md-card>
+  </md-dialog-content>
+  </md-dialog>
+</script>
